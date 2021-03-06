@@ -137,9 +137,9 @@ do
 	PORTcounter=$(($PRT + $CONcounter + index))
 	cp $WORKINGDIR/servicefolder/octoprint.init $installLocation/octoprint.init
 	cp $WORKINGDIR/servicefolder/octoprint.default $installLocation/octoprint.default
-	if [ "$CONcounter" -gt 0 ]; then
+		if [ "$CONcounter" -gt 0 ]; then
 	  echo "This is not the first instances, so appending the previous instance into required start so it doesn't break the CPU on boot..."
-	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" $installLocation/servicefolder/octoprint.init
+	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" $installLocation/octoprint.init
   fi
 	sed -i "s/USER=pi/USER=$userSelect/g" $installLocation/octoprint.default
 	sed -i "s/PORT=5000/PORT=$PORTcounter/g" $installLocation/octoprint.default
@@ -161,7 +161,7 @@ do
   sed -i "s/      github:/      github: '$GITHUB_ACCESS_TOKEN'/g" $installLocation/.octoprint-$(($CONcounter + index))/config.yaml
 	sudo service octoprint-$(($CONcounter + index)) start
 	sleep 5
-	echo "Service octoprint-$(($CONcounter + index)) has started on http://$(hostname -I):$PORTcounter or http://localhost:$PORTcounter"
+	echo "Service octoprint-$(($CONcounter + index)) has started on http://$(hostname -I | xargs):$PORTcounter or http://localhost:$PORTcounter"
 	((CONcounter++))
 done
 
@@ -194,7 +194,7 @@ then
   for((i=$CONcounter;i<$printerCount;++i))
   do
   PORTcounter=$(($PRT + $CONcounter + index))
-  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> $WORKINGDIR/printers_import.json
+  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I | xargs)):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> $WORKINGDIR/printers_import.json
 	((CONcounter++))
   done
   echo "]" >> $WORKINGDIR/printers_import.json
