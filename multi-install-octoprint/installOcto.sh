@@ -110,6 +110,11 @@ echo "Done!"
 
 servicefolder="./servicefolder"
 
+echo "Since OctoPrint Version 1.5.0 we can use a GitHub access token in our config.yaml file..."
+echo "Please generate and enter your access token here: (Press enter to skip)"
+read GITHUB_ACCESS_TOKEN
+
+
 echo "Now we need to create a system service for each instance. Two sec's I'll get on it!"
 echo "..."
 sudo systemctl daemon-reload
