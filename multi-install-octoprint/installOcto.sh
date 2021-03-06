@@ -184,21 +184,24 @@ echo "oldPrinterCount=$(($printerCount + index))" > $installLocation/oldPrinterC
 echo "Done"
 
 
-
 read -p "Do you want to generate and OctoFarm printer.json file to import to your developer instance? [Y/N] " -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
-touch $WORKINGDIR/printers_import.json
-echo "["  >>  $WORKINGDIR/printers_import.json
+
+echo "Resetting counters..."
+PRT=5000
+CONcounter=0
+touch $installLocation/printers_import.json
+echo "[" >> $installLocation/printers_import.json
 then
   for((i=$CONcounter;i<$printerCount;++i))
   do
   PORTcounter=$(($PRT + $CONcounter + index))
-  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I | xargs)):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> $WORKINGDIR/printers_import.json
+  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I | xargs)):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}," >> $installLocation/printers_import.json
 	((CONcounter++))
   done
-  echo "]" >> $WORKINGDIR/printers_import.json
-  echo "Successfully generated your $WORKINGDIR/printers_import.json file."
+  echo "]" >> $installLocation/printers_import.json
+  echo "Successfully generated your $installLocation/printers_import.json file."
 fi
 
 
