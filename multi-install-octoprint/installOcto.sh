@@ -157,8 +157,8 @@ do
 	sudo systemctl daemon-reload
   echo "Updating the instances restart command: serverRestartCommand: sudo service octoprint-$(($CONcounter + index))"
   sed -i "s/        serverRestartCommand: sudo service octoprint restart/        serverRestartCommand: sudo service octoprint-$(($CONcounter + index)) restart/g" $installLocation/.octoprint-$(($CONcounter + index))/config.yaml
-  echo "Updating the instances access token: github: $(GITHUB_ACCESS_TOKEN)"
-  sed -i "s/      github:/      github: $(GITHUB_ACCESS_TOKEN)/g" $installLocation/.octoprint-$(($CONcounter + index))/config.yaml
+  echo "Updating the instances access token: github: '$GITHUB_ACCESS_TOKEN'"
+  sed -i "s/      github:/      github: '$GITHUB_ACCESS_TOKEN'/g" $installLocation/.octoprint-$(($CONcounter + index))/config.yaml
 	sudo service octoprint-$(($CONcounter + index)) start
 	sleep 5
 	echo "Service octoprint-$(($CONcounter + index)) has started on http://$(hostname -I):$PORTcounter or http://localhost:$PORTcounter"
