@@ -17,6 +17,8 @@
 ## 3. Dump a compatible import file for OctoFarm. User may also use the Scan function, and paste in the APIKEY
 ## 4. Allow the input of GitHub personal access token to stop rate limit issues with OctoPrint Update/Plugin installations - Only works on 1.5.0+
 
+WORKINGDIR=$(pwd)
+
 echo "Hello and welcome to OctoPrint installation script!"
 echo "Before we start, I will need some basic information regarding the system this is getting setup on..."
 echo "Which linux user would you like to install OctoPrint on?"
@@ -126,13 +128,13 @@ for((i=$CONcounter;i<$printerCount;++i))
 do
   echo "Setting up instance: $(($CONcounter + index + 1)) out of $(($printerCount + index))"
   echo "Copying ./octoprint-default/ to $installLocation/.octoprint-$(($CONcounter + index))"
-  cp -r ./octoprint-default/ $installLocation/.octoprint-$(($CONcounter + index))/
+  cp -r $WORKINGDIR/octoprint-default/ $installLocation/.octoprint-$(($CONcounter + index))/
 	PORTcounter=$(($PRT + $CONcounter + index))
-	cp $servicefolder/octoprint.init $installLocation/octoprint.init
-	cp $servicefolder/octoprint.default $installLocation/octoprint.default
+	cp $WORKINGDIR/servicefolder/octoprint.init $installLocation/octoprint.init
+	cp $WORKINGDIR/servicefolder/octoprint.default $installLocation/octoprint.default
 	if [ "$CONcounter" -gt 0 ]; then
 	  echo "This is not the first instances, so appending the previous instance into required start so it doesn't break the CPU on boot..."
-	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" ./multi-install-octoprint/servicefolder/octoprint.init
+	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" $installLocation/servicefolder/octoprint.init
   fi
 	sed -i "s/USER=pi/USER=$userSelect/g" $installLocation/octoprint.default
 	sed -i "s/PORT=5000/PORT=$PORTcounter/g" $installLocation/octoprint.default
@@ -177,18 +179,21 @@ echo "oldPrinterCount=$(($printerCount + index))" > $installLocation/oldPrinterC
 echo "Done"
 
 
+
 read -p "Do you want to generate and OctoFarm printer.json file to import to your developer instance? [Y/N] " -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
-touch printers_import.json
-echo "["  >> printers_import.json
+touch $WORKINGDIR/printers_import.json
+echo "["  >>  $WORKINGDIR/printers_import.json
 then
   for((i=$CONcounter;i<$printerCount;++i))
   do
   PORTcounter=$(($PRT + $CONcounter + index))
-  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> printers_import.json
+  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> $WORKINGDIR/printers_import.json
 	((CONcounter++))
   done
+  echo "]" >> $WORKINGDIR/printers_import.json
+  echo "Successfully generated your $WORKINGDIR/printers_import.json file."
 fi
 
 
