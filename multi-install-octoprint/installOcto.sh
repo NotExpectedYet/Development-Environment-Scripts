@@ -153,7 +153,7 @@ do
   echo "Updating the instances access token: github: $(GITHUB_ACCESS_TOKEN)"
   sed -i "s/      github:/      github: $(GITHUB_ACCESS_TOKEN)/g" $installLocation/.octoprint-$(($CONcounter + index))/config.yaml
 	sudo service octoprint-$(($CONcounter + index)) start
-	sleep 10
+	sleep 5
 	echo "Service octoprint-$(($CONcounter + index)) has started on http://$(hostname -I):$PORTcounter or http://localhost:$PORTcounter"
 	((CONcounter++))
 done
@@ -176,13 +176,20 @@ echo "Saving printer index in $installLocation/oldPrinterCount, Do not delete th
 echo "oldPrinterCount=$(($printerCount + index))" > $installLocation/oldPrinterCount
 echo "Done"
 
-while true; do
-	read -p "Do you want to generate and OctoFarm printer.json file to import to your developer instance? [Y/N] :" yn
-	case $yn in
-		[Yy]* ) break;;
-   		[Nn]* ) echo "On Which unix user this install should be run on? watch out for typos!"; read userSelect; continue;;
-    		* ) echo "Please answer by yes (Y/y) or no (N/n).";;
-	esac
-done
+
+read -p "Do you want to generate and OctoFarm printer.json file to import to your developer instance? [Y/N] " -n 1 -r
+echo    # (optional) move to a new line
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+touch printers_import.json
+echo "["  >> printers_import.json
+then
+  for((i=$CONcounter;i<$printerCount;++i))
+  do
+  PORTcounter=$(($PRT + $CONcounter + index))
+  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}" >> printers_import.json
+	((CONcounter++))
+  done
+fi
+
 
 echo "Everything is Done!"
