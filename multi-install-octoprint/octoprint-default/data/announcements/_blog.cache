@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoBlog</title>
+    <link>https://octoprint.org/blog/</link>
+    <atom:link href="https://octoprint.org/feeds/octoblog.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Mar 2021 18:32:39 -0600</pubDate>
+    <lastBuildDate>Fri, 05 Mar 2021 18:32:39 -0600</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+    <item>
+      <title>OctoPrint On Air #37</title>
+      <description>
+        <![CDATA[
+          The thirty-seventh episode of a monthly live broadcast for Patrons which aired live on January 29th 2021.
+        ]]>
+      </description>
+      <pubDate>Mon, 01 Feb 2021 05:25:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2021/02/01/octoprint-on-air-37/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2021/02/01/octoprint-on-air-37/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>Turning a static website more dynamic</title>
+      <description>
+        <![CDATA[
+          Since its creation in 2015 the OctoPrint plugin repository has been a static page powered by Jekyll. Read how over the course of 2020 it got more dynamic through the power of GitHub Actions.
+        ]]>
+      </description>
+      <pubDate>Tue, 15 Dec 2020 08:15:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/12/15/turning-a-static-website-more-dynamic/</guid>
+      <category>OctoPrint Core and Plugin Development</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #36</title>
+      <description>
+        <![CDATA[
+          The thirty-sixth episode of a monthly live broadcast for Patrons which aired live on December 11th 2020.
+        ]]>
+      </description>
+      <pubDate>Mon, 14 Dec 2020 10:40:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/12/14/octoprint-on-air-36/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #35</title>
+      <description>
+        <![CDATA[
+          The thirty-fifth episode of a monthly live broadcast for Patrons which aired live on October 30th 2020.
+        ]]>
+      </description>
+      <pubDate>Thu, 05 Nov 2020 07:30:00 -0600</pubDate>
+      <link>https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/11/05/octoprint-on-air-35/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #34</title>
+      <description>
+        <![CDATA[
+          The thirty-fourth episode of a monthly live broadcast for Patrons which aired live on September 18th 2020.
+        ]]>
+      </description>
+      <pubDate>Thu, 24 Sep 2020 07:00:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/09/24/octoprint-on-air-34/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>Upgrade your OctoPrint install to Python 3!</title>
+      <description>
+        <![CDATA[
+          Give OctoPrint a spin on Python 3! Run this simple install script.
+        ]]>
+      </description>
+      <pubDate>Thu, 10 Sep 2020 06:45:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/09/10/upgrade-to-py3/</guid>
+      <category>OctoPrint News</category>
+    </item>
+    <item>
+      <title>Automating OctoPrint's release tests</title>
+      <description>
+        <![CDATA[
+          OctoPrint's release tests so far involved a lot of card juggling and other manual steps with a lot of wasted time. Read how I was finally able to automate this after a long journey.
+        ]]>
+      </description>
+      <pubDate>Wed, 29 Jul 2020 09:45:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/07/29/automating-octoprints-release-tests/</guid>
+      <category>OctoPrint Core and Plugin Development</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #33</title>
+      <description>
+        <![CDATA[
+          The thirty-third episode of a monthly live broadcast for Patrons which aired live on July 24th 2020.
+        ]]>
+      </description>
+      <pubDate>Mon, 27 Jul 2020 10:30:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/07/27/octoprint-on-air-33/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #32</title>
+      <description>
+        <![CDATA[
+          The thirty second episode of a monthly live broadcast for Patrons which aired live on June 19th 2020.
+        ]]>
+      </description>
+      <pubDate>Thu, 25 Jun 2020 11:29:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/06/25/octoprint-on-air-32/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+    <item>
+      <title>OctoPrint On Air #31</title>
+      <description>
+        <![CDATA[
+          The thirtyfirst episode of a monthly live broadcast for Patrons which aired live on May 8th 2020.
+        ]]>
+      </description>
+      <pubDate>Thu, 14 May 2020 07:55:00 -0500</pubDate>
+      <link>https://octoprint.org/blog/2020/05/14/octoprint-on-air-31/</link>
+      <guid isPermaLink="true">https://octoprint.org/blog/2020/05/14/octoprint-on-air-31/</guid>
+      <category>OctoPrint On Air</category>
+    </item>
+  </channel>
+</rss>

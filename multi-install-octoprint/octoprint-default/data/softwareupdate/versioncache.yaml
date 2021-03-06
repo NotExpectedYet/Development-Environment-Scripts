@@ -1,0 +1,49 @@
+__version: 1.4.2
+file_check:
+  available: false
+  error: null
+  hash: 1fd5482b4fa54235531810fa4bf95620
+  information:
+    local:
+      name: 2021.2.23
+      value: 2021.2.23
+    needs_online: true
+    remote:
+      name: 2021.2.23
+      release_notes: https://github.com/OctoPrint/OctoPrint-FileCheck/releases/tag/2021.2.23
+      value: 2021.2.23
+  online: true
+  possible: true
+  timestamp: 1615019421.0260713
+firmware_check:
+  available: false
+  error: null
+  hash: bc7ee072105b1fd13a8aaef565bf727d
+  information:
+    local:
+      name: 2021.2.4
+      value: 2021.2.4
+    needs_online: true
+    remote:
+      name: 2021.2.4
+      release_notes: https://github.com/OctoPrint/OctoPrint-FirmwareCheck/releases/tag/2021.2.4
+      value: 2021.2.4
+  online: true
+  possible: true
+  timestamp: 1615019421.0263388
+octoprint:
+  available: true
+  error: null
+  hash: d0e92926b751cf8462294b176fb2864a
+  information:
+    local:
+      name: 1.4.2
+      value: 1.4.2
+    needs_online: true
+    remote:
+      name: 1.5.3
+      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.5.3
+      value: 1.5.3
+  online: true
+  possible: true
+  timestamp: 1615019421.026518

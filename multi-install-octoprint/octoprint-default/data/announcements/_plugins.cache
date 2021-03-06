@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoPrint Plugin Repository</title>
+    <description>The official OctoPrint Plugin Repository</description>
+    <link>https://plugins.octoprint.org/</link>
+    <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 05 Mar 2021 18:26:03 -0600</pubDate>
+    <lastBuildDate>Fri, 05 Mar 2021 18:26:03 -0600</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+    
+      <item>
+        <title>OctoPrint-TranslateModel</title>
+        <description>
+          <![CDATA[
+            A plugin to move models around without re-slicing.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/translatemodel/viewerGraphic.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 01 Mar 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/translatemodel/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/translatemodel/</guid>
+        
+        <category>gcode</category>
+        
+      </item>
+    
+      <item>
+        <title>IgnorePausedForUser</title>
+        <description>
+          <![CDATA[
+            Plugin to ignore 'Paused for User' message from printer.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ignorepausedforuser/ignorepausedforuser.jpg"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 25 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ignorepausedforuser/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ignorepausedforuser/</guid>
+        
+        <category>paused for user</category>
+        
+        <category>pause</category>
+        
+        <category>ignore pause</category>
+        
+        <category>stuck print</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-UBLMeshEdit</title>
+        <description>
+          <![CDATA[
+            A plugin that provides a method for manually editing and saving/loading UBL meshes.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ublmeshedit/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 24 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ublmeshedit/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ublmeshedit/</guid>
+        
+        <category>bed leveling</category>
+        
+        <category>ubl</category>
+        
+        <category>mesh</category>
+        
+      </item>
+    
+      <item>
+        <title>Slicer Estimator</title>
+        <description>
+          <![CDATA[
+            Slicer Estimator is a generic implemenation to read accurate remaining time to print embedded in the GCODE file by the slicer
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Wed, 24 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/SlicerEstimator/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SlicerEstimator/</guid>
+        
+        <category>helper</category>
+        
+        <category>estimator</category>
+        
+        <category>estimation</category>
+        
+        <category>time</category>
+        
+        <category>print time</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-Tplinkautoshutdown</title>
+        <description>
+          <![CDATA[
+            This plugin is designed to help you integrate your IoT TP-Link Kasa wireless plug into OctoPrint. The basis of the plug-in is to enable you to automatically switch-off your 3D printer once a print has successfully completed.
+            <p><img src="https://plugins.octoprint.org/assets/img/repo-600x400.png"></p>
+            
+          ]]>
+        </description>
+        <pubDate>
+Wed, 17 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/TpLinkAutoShutdown/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/TpLinkAutoShutdown/</guid>
+        
+        <category>Printer</category>
+        
+        <category>Kasa</category>
+        
+        <category>Tp-Link</category>
+        
+        <category>Auto_Shutdown</category>
+        
+      </item>
+    
+      <item>
+        <title>GPIO Control</title>
+        <description>
+          <![CDATA[
+            GPIO Control adds a sidebar with on/off buttons. You can add as many buttons as you want that will control each device connected to your Raspberry Pi.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gpiocontrol/sidebar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 16 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gpiocontrol/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gpiocontrol/</guid>
+        
+        <category>raspberry pi</category>
+        
+        <category>gpio</category>
+        
+        <category>control</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-InlineConfirm</title>
+        <description>
+          <![CDATA[
+            Removes the confirm cancel print dialog and replaces it with confirmation by clicking the cancel buton twice.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/inlineconfirm/cancel_print_button.gif"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 14 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/inlineconfirm/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/inlineconfirm/</guid>
+        
+        <category>ui</category>
+        
+        <category>control</category>
+        
+        <category>cancel</category>
+        
+      </item>
+    
+      <item>
+        <title>Robot Control</title>
+        <description>
+          <![CDATA[
+            Plugin to control a robot over i2c
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/robotcontrol/Screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Thu, 11 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/robotcontrol/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/robotcontrol/</guid>
+        
+        <category>i2c</category>
+        
+        <category>automation</category>
+        
+        <category>robot</category>
+        
+        <category>robotics</category>
+        
+        <category>GPIO</category>
+        
+      </item>
+    
+      <item>
+        <title>SimplyPrint Cloud</title>
+        <description>
+          <![CDATA[
+            3D print online anywhere; elevate your 3D printing experience from your computer or phone, with smart features like filament manager, livestream, print queue, and much more. Simple, beautiful, smart.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SimplyPrint/showcase_feature_image.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 02 Feb 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/SimplyPrint/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SimplyPrint/</guid>
+        
+        <category>cloud</category>
+        
+        <category>simplyprint</category>
+        
+        <category>remote monitoring</category>
+        
+        <category>remote access</category>
+        
+        <category>print local files</category>
+        
+        <category>print queue</category>
+        
+        <category>control</category>
+        
+        <category>webcam</category>
+        
+      </item>
+    
+      <item>
+        <title>MeatPack</title>
+        <description>
+          <![CDATA[
+            Automatic G-Code Compression
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/meatpack/meatpack.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Tue, 26 Jan 2021 00:00:00 -0600</pubDate>
+        <link>https://plugins.octoprint.org/plugins/meatpack/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/meatpack/</guid>
+        
+        <category>gcode</category>
+        
+        <category>compression</category>
+        
+        <category>firmware</category>
+        
+        <category>serial</category>
+        
+        <category>packing</category>
+        
+        <category>prusa</category>
+        
+        <category>marlin</category>
+        
+      </item>
+    
+  </channel>
+</rss>

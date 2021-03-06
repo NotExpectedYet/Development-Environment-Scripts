@@ -1,0 +1,63 @@
+accessControl:
+    salt: eTXcLSef9NYbVvo78ORr8fuwwKNDsmUI
+api:
+    allowCrossOrigin: true
+    key: 3B9CC454047F43ECB7A476EF74F2CB50
+plugins:
+    announcements:
+        _config_version: 1
+        channels:
+            _blog:
+                read_until: 1612178700
+            _important:
+                read_until: 1521111600
+            _octopi:
+                read_until: 1611568800
+            _plugins:
+                read_until: 1614578400
+            _releases:
+                read_until: 1611052200
+    discovery:
+        upnpUuid: 88c9ad35-1c97-4c19-9f8f-b11f2e1b8f8c
+    errortracking:
+        unique_id: 738e5259-dcf0-4be6-a109-918aea680dba
+    gcodeviewer:
+        _config_version: 1
+    softwareupdate:
+        _config_version: 8
+    tracking:
+        enabled: false
+        unique_id: b81acee2-1dff-455c-a8be-e10f800200e6
+    virtual_printer:
+        _config_version: 1
+        enabled: true
+printerProfiles:
+    default: _default
+serial:
+    baudrate: 250000
+    port: VIRTUAL
+server:
+    commands:
+        serverRestartCommand: sudo service octoprint-0 restart
+        systemRestartCommand: sudo reboot
+        systemShutdownCommand: sudo shutdown -h now
+    firstRun: false
+    onlineCheck:
+        enabled: true
+    pluginBlacklist:
+        enabled: true
+    secretKey: foID9Yu6ZfF3X01rvdc6GZ6sHzeYLaFL
+    seenWizards:
+        backup: null
+        corewizard: 3
+        tracking: null
+temperature:
+    profiles:
+    -   bed: 100
+        chamber: null
+        extruder: 210
+        name: ABS
+    -   bed: 60
+        chamber: null
+        extruder: 180
+        name: PLA

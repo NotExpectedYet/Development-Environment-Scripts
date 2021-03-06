@@ -1,0 +1,14 @@
+octofarm:
+    active: true
+    apikey: null
+    groups:
+    - admins
+    - users
+    password: 966656eb7bdaf4332207ac7f67112d8aa87bed81984c3b982a8e9c9cccd74b525b396dbb7ed7ceafc3374c73c0bf6447bf0fca0f716d9fea686722ccc95d5755
+    permissions: []
+    roles:
+    - user
+    - admin
+    settings:
+        interface:
+            language: _default
