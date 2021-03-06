@@ -1,5 +1,7 @@
 ### Multi-OctoPrint Intsall commands
 
+#### NOTE: Replace the number 99 with the amount of instances you have -1. 
+
 ## Disable Current Services
 `for (( i = n; i < 99; i ++)); do sudo systemctl disable octoprint-$i; done`
 
@@ -15,5 +17,4 @@
 ## Start Current Services
 `for (( i = n; i < 99; i ++)); do sudo systemctl start octoprint-$i; done`
 
-## Delete all Services
-`for (( i = n; i < 99; i ++)); do sudo systemctl disable octoprint-$i; done`
+
