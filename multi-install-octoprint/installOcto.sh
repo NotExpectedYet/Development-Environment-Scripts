@@ -132,7 +132,7 @@ do
 	cp $servicefolder/octoprint.default $installLocation/octoprint.default
 	if [ "$CONcounter" -gt 0 ]; then
 	  echo "This is not the first instances, so appending the previous instance into required start so it doesn't break the CPU on boot..."
-	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index))/g" ./multi-install-octoprint/servicefolder/octoprint.init
+	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" ./multi-install-octoprint/servicefolder/octoprint.init
   fi
 	sed -i "s/USER=pi/USER=$userSelect/g" $installLocation/octoprint.default
 	sed -i "s/PORT=5000/PORT=$PORTcounter/g" $installLocation/octoprint.default
