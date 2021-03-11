@@ -137,7 +137,7 @@ do
 	PORTcounter=$(($PRT + $CONcounter + index))
 	cp $WORKINGDIR/servicefolder/octoprint.init $installLocation/octoprint.init
 	cp $WORKINGDIR/servicefolder/octoprint.default $installLocation/octoprint.default
-		if [ "$CONcounter" -gt 0 ]; then
+	if [ "$CONcounter" -gt 0 ]; then
 	  echo "This is not the first instances, so appending the previous instance into required start so it doesn't break the CPU on boot..."
 	  sed -i "s/^# Required-Start.*/& octoprint-$(($CONcounter + index - 1))/g" $installLocation/octoprint.init
   fi
