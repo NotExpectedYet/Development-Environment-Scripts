@@ -197,7 +197,7 @@ then
   for((i=$CONcounter;i<$printerCount;++i))
   do
   PORTcounter=$(($PRT + $CONcounter + index))
-  echo "{'name':'OctoPrint-$(($CONcounter + index))','group':'','printerURL':'http://$(hostname -I | xargs)):$PORTcounter','cameraURL':'','apikey':'3990421DF6624F3986C04EFF4C2100AF'}," >> $installLocation/printers_import.json
+  echo "{\"name\":\"OctoPrint-$(($CONcounter + index))\",\"group\":\"\",\"printerURL\":\"http://$(hostname -I | xargs)):$PORTcounter\",\"cameraURL\":\"\",\"apikey\":\"3990421DF6624F3986C04EFF4C2100AF\"}," >> $installLocation/printers_import.json
 	((CONcounter++))
   done
   echo "]" >> $installLocation/printers_import.json
