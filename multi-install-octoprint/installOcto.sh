@@ -134,6 +134,7 @@ pip3 install pip --upgrade &> /dev/null
 echo "Installing OctoPrint Version:$octoVersion"
 echo "..."
 pip3 install octoprint==$octoVersion &> /dev/null
+pip3 install psycopg2 &> /dev/null
 echo "Done!"
 
 servicefolder="./servicefolder"
