@@ -38,7 +38,7 @@ done
 echo "Which version of OctoPrint would you like to install?"
 octoVersion=""
 PS3='Please enter your choice: '
-options=("1.7.1" "1.7.0" "1.6.1" "1.6.0" "1.5.3" "1.5.2" "1.5.1" "1.5.0" "Quit")
+options=("1.7.1" "1.7.0" "1.6.1" "1.6.0" "1.5.3" "1.5.2" "1.5.1" "1.5.0" "1.4.2" "1.4.1" "1.4.0" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
