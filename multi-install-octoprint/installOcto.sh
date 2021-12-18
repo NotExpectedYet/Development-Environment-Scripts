@@ -74,6 +74,18 @@ do
             octoVersion=$opt
             echo "You chose: $opt"
             break;;
+        "1.4.2")
+            octoVersion=$opt
+            echo "You chose: $opt"
+            break;;
+        "1.4.1")
+            octoVersion=$opt
+            echo "You chose: $opt"
+            break;;
+        "1.4.0")
+            octoVersion=$opt
+            echo "You chose: $opt"
+            break;;
         "Quit")
             echo "Stopping installation... goodbye!"
             exit;;
