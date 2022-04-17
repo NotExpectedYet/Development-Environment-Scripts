@@ -41,7 +41,7 @@ server:
         serverRestartCommand: sudo service octoprint restart
         systemRestartCommand: sudo reboot
         systemShutdownCommand: sudo shutdown -h now
-    firstRun: false
+    firstRun: true
     onlineCheck:
         enabled: true
     pluginBlacklist:
